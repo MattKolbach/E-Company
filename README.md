@@ -7,7 +7,7 @@ SO THAT my company can compete with other e-commerce companies
 GIVEN a functional Express.js API
 
 WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
-THEN I am able to connect to a database using Sequelize
+THEN I am able to connect to a database using Sequelize ---DONE
 
 WHEN I enter schema and seed commands
 THEN a development database is created and is seeded with test data
