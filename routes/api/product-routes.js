@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
   // find all products
   Product.findAll({
     attributes: ["id", "product_name", "price", "stock", "category_id"],
-    include: [Catagory, Tag],
+    include: ['Category', 'Tag'],
   })
     .then((dbProductData) => res.json(dbProductData))
     .catch((err) => {
@@ -26,7 +26,7 @@ router.get("/:id", (req, res) => {
       id: req.params.id,
     },
     attributes: ["id", "product_name", "price", "stock", "category_id"],
-    include: [Catagory, Tag],
+    include: ['Category', 'Tag'],
   })
     .then((dbProductData) => {
       if (!dbProductData) {
