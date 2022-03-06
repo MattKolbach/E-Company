@@ -19,6 +19,7 @@ ProductTag.init(
         model: "product",
         key: "id",
       },
+      unique: false
     },
     tag_id: {
       type: DataTypes.INTEGER,
@@ -27,6 +28,7 @@ ProductTag.init(
         model: "tag",
         key: "id",
       },
+      unique: false
     },
   },
   {
